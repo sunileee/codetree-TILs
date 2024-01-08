@@ -8,7 +8,7 @@ public class Main {
         int bAge = sc.nextInt();
         String bSex = sc.next();
 
-        if ((aAge >= 19 || bAge >= 19) && (aSex.charAt(0) == 'M' || bSex.charAt(0) == 'M')) {
+        if ((aAge >= 19 && aSex.charAt(0) == 'M') || (bAge >= 19 && bSex.charAt(0) == 'M')) {
             System.out.print("1");
         } else {
             System.out.print("0");
