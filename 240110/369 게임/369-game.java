@@ -6,7 +6,8 @@ public class Main {
         int n = sc.nextInt();
 
         for (int i = 1; i <= n; i++) {
-            if (i % 3 == 0 || i == 3 || i == 6 || i == 9) {
+            String numStr = String.valueOf(i);
+            if (i % 3 == 0 || numStr.contains("3") || numStr.contains("6") || numStr.contains("9")) {
                 System.out.print("0 ");
             } else {
                 System.out.print(i + " ");
