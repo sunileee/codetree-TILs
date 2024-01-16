@@ -9,7 +9,7 @@ public class Main {
 
         boolean satisfied = false;
         for (int i = a; i <= b; i++) {
-            if (i % c != 0) {
+            if (i <= c && i % c != 0) {
                 satisfied = true;
             }
         }
