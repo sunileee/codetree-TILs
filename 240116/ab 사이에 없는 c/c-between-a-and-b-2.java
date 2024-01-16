@@ -8,16 +8,14 @@ public class Main {
         int c = sc.nextInt();
 
         boolean satisfied = false;
-        for (int i = a; i <= b; i++) {
-            if (i >= c && i % c != 0) {
-                satisfied = true;
-            }
+        for(int i = a; i <= b; i++) {
+            if(i % c == 0)
+                satisfied = false;
         }
-        if (satisfied == true) {
+
+	    if(satisfied == true)
             System.out.println("YES");
-        }
-        else {
+        else
             System.out.println("NO");
-        }
     }
 }
