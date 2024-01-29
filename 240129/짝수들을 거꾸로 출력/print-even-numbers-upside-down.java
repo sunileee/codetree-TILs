@@ -8,14 +8,11 @@ public class Main {
         int[] arr = new int[n];
 
         for (int i = 0; i < n; i++) {
-            int m = sc.nextInt();
-            if (m % 2 == 0) {
-                arr[i] = m;
-            }
+            arr[i] = sc.nextInt();
         }
 
         for (int j = arr.length - 1; j >= 0; j--) {
-            if (arr[j] != 0) {
+            if (arr[j] % 2 == 0) {
                 System.out.print(arr[j] + " ");
             }
         }
