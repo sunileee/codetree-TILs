@@ -10,7 +10,7 @@ public class Main {
         int[] arr = new int[10];
 
         while (true) {
-            if (a <= 0)
+            if (a <= 1)
                 break;
 
             arr[a % b]++;
