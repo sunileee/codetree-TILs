@@ -19,19 +19,27 @@ public class Main {
         }
 
         int cnt = 0;
-        boolean check = false;
         for (i = 0; i < n1; i++) {
+            boolean check = true;
+
             for (int j = 0; j < n2; j++) {
-                if (i != n1 - 1 && j != n2 - 1) {
-                    if (A[i] == B[j] && A[i+1] == B[j+1]) {
-                        check = true;
-                        break;
-                    }
+                if(i + j >= n1) {
+                    check = false;
+                    break;
                 }
+                
+                if(A[i + j] != B[j]) {
+                    check = false;
+                    break;
+                }
+            }
+
+            if(check) {
+                System.out.print("Yes");
+                System.exit(0);
             }
         }
 
-        String checkStr = check ? "Yes" : "No";
-        System.out.print(checkStr);
+        System.out.print("No");
     }
 }
