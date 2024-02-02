@@ -22,9 +22,10 @@ public class Main {
         boolean check = false;
         for (i = 0; i < n1; i++) {
             for (int j = 0; j < n2; j++) {
-                if (j != n2 - 1) {
+                if (i != n1 - 1 && j != n2 - 1) {
                     if (A[i] == B[j] && A[i+1] == B[j+1]) {
                         check = true;
+                        break;
                     }
                 }
             }
