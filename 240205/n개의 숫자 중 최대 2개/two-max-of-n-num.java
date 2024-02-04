@@ -11,23 +11,26 @@ public class Main {
         }
 
         int maxVal = arr[0];
-        int maxVal2 = arr[0];
-
         int maxIdx = 0;
 
         for (int i = 0; i < n; i++) {
             if (arr[i] > maxVal) {
-                maxIdx = i;
                 maxVal = arr[i];
+                maxIdx = i;
             }
         }
 
+        System.out.print(maxVal + " ");
+        arr[maxIdx] = 0;
+
+        int maxVal2 = arr[0];
+
         for (int i = 0; i < n; i++) {
-            if (i != maxIdx && arr[i] > maxVal2) {
+            if (arr[i] > maxVal2) {
                 maxVal2 = arr[i];
             }
         }
 
-        System.out.print(maxVal + " " + maxVal2);
+        System.out.print(maxVal2);
     }
 }
