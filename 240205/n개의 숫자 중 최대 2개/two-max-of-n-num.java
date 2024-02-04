@@ -10,7 +10,9 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
-        int maxVal = arr[0];
+        int maxVal = Integer.MIN_VALUE;
+        int maxVal2 = Integer.MIN_VALUE;
+
         int maxIdx = 0;
 
         for (int i = 0; i < n; i++) {
@@ -20,17 +22,15 @@ public class Main {
             }
         }
 
-        System.out.print(maxVal + " ");
-        arr[maxIdx] = 0;
-
-        int maxVal2 = arr[0];
-
         for (int i = 0; i < n; i++) {
+            if (i == maxIdx)
+                continue;
+
             if (arr[i] > maxVal2) {
                 maxVal2 = arr[i];
             }
         }
 
-        System.out.print(maxVal2);
+        System.out.print(maxVal + " " + maxVal2);
     }
 }
