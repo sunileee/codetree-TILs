@@ -14,7 +14,6 @@ public class Main {
             if (c == A.charAt(i)) {
                 charArr[point] = c;
                 countArr[point]++;
-                
             }
             else {
                 c = A.charAt(i);
@@ -25,10 +24,12 @@ public class Main {
             }
         }
 
-        int size = (point+1) * 2;
-        System.out.println(size);
+        String answer = "";
         for(int i = 0; i <= point; i++) {
-            System.out.printf("%c%d", charArr[i], countArr[i]);
+            answer += String.format(charArr[i] + "" + countArr[i]);
         }
+
+        System.out.println(answer.length());
+        System.out.println(answer);
     }
 }
