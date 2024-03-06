@@ -11,6 +11,7 @@ public class Main {
             int type = sc.nextInt();
 
             if (type == 1) {
+                arr = s.toCharArray();
                 int a = sc.nextInt();
                 int b = sc.nextInt();
 
@@ -18,6 +19,7 @@ public class Main {
                 arr[a-1] = arr[b-1];
                 arr[b-1] = temp;
                 s = String.valueOf(arr);
+
             }
             else if (type == 2) {
                 char a = sc.next().charAt(0);
