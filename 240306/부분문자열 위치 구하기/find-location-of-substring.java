@@ -6,8 +6,11 @@ public class Main {
         String inStr = sc.next();
         String deStr = sc.next();
 
+        int index = -1;
         if (inStr.contains(deStr)) {
-            System.out.print(inStr.indexOf(deStr.charAt(0)));
+            index = inStr.indexOf(deStr.charAt(0));
+        
         }
+        System.out.print(index);
     }
 }
