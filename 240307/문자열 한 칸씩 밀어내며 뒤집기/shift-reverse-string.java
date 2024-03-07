@@ -26,7 +26,8 @@ public class Main {
                     for (int j = len-1; j >= 0; j--) {
                         result[len-1 - j] = arr[j];
                     }
-                    System.out.println(String.valueOf(result));
+                    str = String.valueOf(result);
+                    System.out.println(str);
                     break;
                 }
             }
