@@ -8,6 +8,9 @@ public class Main {
     
         int count = 0;
         while (true) {
+            a = a.substring(1) + a.substring(0, 1);
+            count++;
+
             if (a.equals(b))
                 break;
 
@@ -15,9 +18,6 @@ public class Main {
                 count = -1;
                 break;
             }
-
-            a = a.substring(1) + a.substring(0, 1);
-            count++;
         }
 
         System.out.print(count);
