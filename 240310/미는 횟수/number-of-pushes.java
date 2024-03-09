@@ -6,9 +6,10 @@ public class Main {
         String a = sc.next();
         String b = sc.next();
     
+        int len = a.length();
         int count = 0;
         while (true) {
-            a = a.substring(1) + a.substring(0, 1);
+            a = a.substring(len-1) + a.substring(0, len-1);
             count++;
 
             if (a.equals(b))
