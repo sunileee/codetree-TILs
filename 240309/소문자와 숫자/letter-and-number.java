@@ -7,7 +7,7 @@ public class Main {
 
         char[] arr = s.toCharArray();
         for (int i = 0; i < arr.length; i++) {
-            if (('a' <= arr[i] && arr[i] <= 'z') || ('1' <= arr[i] && arr[i] <= '9')) {
+            if (('a' <= arr[i] && arr[i] <= 'z') || ('0' <= arr[i] && arr[i] <= '9')) {
                 System.out.print(arr[i]);
             }
             else if ('A' <= arr[i] && arr[i] <= 'Z') {
