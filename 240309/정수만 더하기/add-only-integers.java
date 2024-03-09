@@ -9,7 +9,7 @@ public class Main {
         char[] arr = str.toCharArray();
         for (int i = 0; i < str.length(); i++) {
             if ('0' <= arr[i] && arr[i] <= '9') {
-                sum += (int) arr[i];
+                sum += (int) arr[i] - 48;
             }
         }
 
