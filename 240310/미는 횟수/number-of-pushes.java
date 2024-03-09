@@ -11,6 +11,11 @@ public class Main {
             if (a.equals(b))
                 break;
 
+            if (count > a.length()) {
+                count = -1;
+                break;
+            }
+
             a = a.substring(1) + a.substring(0, 1);
             count++;
         }
